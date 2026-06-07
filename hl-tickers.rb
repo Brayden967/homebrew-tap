@@ -5,21 +5,21 @@
 class HlTickers < Formula
   desc "Fast terminal market watcher powered by Hyperliquid — no keys, no accounts"
   homepage "https://github.com/brayden967/hl-tickers"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Brayden967/hl-tickers/releases/download/v0.1.0/hl-tickers_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8bb959be60d14c1b7da597004e97be50c676147f35e5dfca14ce07d932851674"
+      url "https://github.com/Brayden967/hl-tickers/releases/download/v0.1.1/hl-tickers_0.1.1_darwin_amd64.tar.gz"
+      sha256 "167e266e218b9fac2c9967a64ea0ec4186b5410bdfa6f45653c319ed9c69d4e4"
 
       define_method(:install) do
         bin.install "hl-tickers"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Brayden967/hl-tickers/releases/download/v0.1.0/hl-tickers_0.1.0_darwin_arm64.tar.gz"
-      sha256 "1f080ee2861f41564febb627635a9af2b99220c6b8da7a7648b5cd32a505e451"
+      url "https://github.com/Brayden967/hl-tickers/releases/download/v0.1.1/hl-tickers_0.1.1_darwin_arm64.tar.gz"
+      sha256 "b86ab4f5092ee204edc8fdf7c15208ee82c3546f87115cd6301b5bf21cc5060a"
 
       define_method(:install) do
         bin.install "hl-tickers"
@@ -29,15 +29,15 @@ class HlTickers < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Brayden967/hl-tickers/releases/download/v0.1.0/hl-tickers_0.1.0_linux_amd64.tar.gz"
-      sha256 "8f9bf1c2f8c086b58068e59e1f7273546700e7580bec376ae1ab96bdc48fcf80"
+      url "https://github.com/Brayden967/hl-tickers/releases/download/v0.1.1/hl-tickers_0.1.1_linux_amd64.tar.gz"
+      sha256 "0a633c48621f7518d004dd64bdfcbde70dba3aa16d8eda6c3568da94de5de27f"
       define_method(:install) do
         bin.install "hl-tickers"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Brayden967/hl-tickers/releases/download/v0.1.0/hl-tickers_0.1.0_linux_arm64.tar.gz"
-      sha256 "7b938458bfbc65850bbbb1b765090ce3e9ed2651ed96a8d26e33ac866502eb02"
+      url "https://github.com/Brayden967/hl-tickers/releases/download/v0.1.1/hl-tickers_0.1.1_linux_arm64.tar.gz"
+      sha256 "9652ddfc011b096d25a86be55dca2a14b3f26125ef3a8cdbd7a2a1f3cdcce057"
       define_method(:install) do
         bin.install "hl-tickers"
       end
